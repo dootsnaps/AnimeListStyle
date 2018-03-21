@@ -41,18 +41,19 @@ body {
   background:url(https://i.imgur.com/2QCpe3R.jpg); /*MAIN BACKGROUND IMAGE*/
   background-size: cover;
   background-position: right bottom;
+  background-color: black;
+  font-weight: light;
+  /*---------DON'T TOUCH---------*/
   overflow:hidden; /*scroll when list is longer than vh*/
   height:100vh;/*page height is vh*/
   transform-style: preserve-3d;/*enable 3d transforms for parallax effect*/
-  font-weight: light;
-  background-color: black;
-  cursor:url(http://i.imgur.com/YxTfKol.png) 9 7, auto; /*green cursor*/
 }
 
-/* Cursor for hovered links*/
-a:hover, a:visited:hover {
-  cursor: url(http://i.imgur.com/ysmichE.png) 9 7, auto; /*red cursor*/
-}
+/* Default cursor */
+body{cursor:url(http://i.imgur.com/YxTfKol.png) 9 7, auto; /*green cursor*/}
+
+/* Cursor for hovered links */
+a:hover, a:visited:hover {cursor: url(http://i.imgur.com/ysmichE.png) 9 7, auto; /*red cursor*/}
 
 /* MAIN LIST CONTENT DIV */
 #list_surround {
@@ -71,73 +72,28 @@ a:hover, a:visited:hover {
 /*---------------------------------SECTION HEADERS---------------------------------*/
 
 table.header_cw .header_title{
-  background:url(https://i.imgur.com/hzK4JqG.png); /*Dark bg, transparent*/
-  background-repeat:none;
-  color:#f9f8d8;/*light yellow text color, same as everywhere else*/
-  font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
-  font-size:30px;
-  height:191px;
-  padding-top:0px;
-  margin-top:-20px;
-  padding-bottom:6px;
-  margin-bottom: -5px;		/*space between headers and sub-headers*/
-  width:237px!important;
-  text-align:center;
-  transform:translateX(-12px);
+  background:url(https://i.imgur.com/hzK4JqG.png); /*Currently Watching*/
 }
 
 table.header_completed .header_title{
-  background:url(https://i.imgur.com/5080Ps3.png); /*Dark bg, transparent*/
-  background-repeat:none;
-  color:#f9f8d8;/*light yellow text color, same as everywhere else*/
-  font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
-  font-size:30px;
-  height:191px;
-  padding-top:0px;
-  margin-top:-20px;
-  padding-bottom:6px;
-  margin-bottom: -5px;		/*space between headers and sub-headers*/
-  width:237px!important;
-  text-align:center;
-  transform:translateX(-12px);
+  background:url(https://i.imgur.com/5080Ps3.png); /*Completed*/
 }
 
 table.header_onhold .header_title{
-  background:url(https://i.imgur.com/tdQfRPL.png); /*Dark bg, transparent*/
-  background-repeat:none;
-  color:#f9f8d8;/*light yellow text color, same as everywhere else*/
-  font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
-  font-size:30px;
-  height:191px;
-  padding-top:0px;
-  margin-top:-20px;
-  padding-bottom:6px;
-  margin-bottom: -5px;		/*space between headers and sub-headers*/
-  width:237px!important;
-  text-align:center;
-  transform:translateX(-12px);
+  background:url(https://i.imgur.com/tdQfRPL.png); /*On-Hold*/
 }
 
 table.header_dropped .header_title{
-  background:url(https://i.imgur.com/sDXHQ6Z.png); /*Dark bg, transparent*/
-  background-repeat:none;
-  color:#f9f8d8;/*light yellow text color, same as everywhere else*/
-  font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
-  font-size:30px;
-  height:191px;
-  padding-top:0px;
-  margin-top:-20px;
-  padding-bottom:6px;
-  margin-bottom: -5px;		/*space between headers and sub-headers*/
-  width:237px!important;
-  text-align:center;
-  transform:translateX(-12px);
+  background:url(https://i.imgur.com/sDXHQ6Z.png); /*Dropped*/
 }
 
 table.header_ptw .header_title{
-  background:url(https://i.imgur.com/zlXMEjF.png); /*Dark bg, transparent*/
+  background:url(https://i.imgur.com/zlXMEjF.png); /*Plan to Watch*/
+}
+
+.header_title{
   background-repeat:none;
-  color:#f9f8d8;/*light yellow text color, same as everywhere else*/
+  color:#f9f8d8;
   font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
   font-size:30px;
   height:191px;
