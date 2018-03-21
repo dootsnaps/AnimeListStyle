@@ -86,8 +86,9 @@ table.header_cw .header_title{
   transform:translateX(-12px);
 }
 
-table.header_cw:hover::after{ /*test*/
- content: url(http://obsidiancity.pw/files/Kumiko%20Noises/kumi035.mp3); 
+table.header_cw::after{ /*test*/
+ display:block;
+ content: url(http://http://obsidiancity.pw/files/traincut.mp4); 
 }
 
 
