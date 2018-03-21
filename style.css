@@ -86,14 +86,6 @@ table.header_cw .header_title{
   transform:translateX(-12px);
 }
 
-table.header_cw::after{ /*test*/
-  height:400px;
-  width:600px;
-  display:block;
-  content: url(http://obsidiancity.pw/files/traincut.mp4); 
-}
-
-
 table.header_completed .header_title{
   background:url(https://i.imgur.com/5080Ps3.png); /*Dark bg, transparent*/
   background-repeat:none;
