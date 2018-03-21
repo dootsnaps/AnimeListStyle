@@ -8,7 +8,7 @@
 #mal\_control\_strip{
   background-color:black;
   background-image:none!important;
-  color:#f9f8d8!important; /*color of text on menu bar*/
+  color:#f9f8d8!important;
 }
 
 /* TOP MENU BAR LINKS */
@@ -410,7 +410,7 @@ tr:hover .td2, tr:hover .td1{
   overflow:hidden;
 }
 
-.status_not_selected:nth-of-type(1)::before, .status_selected:nth-of-type(1)::before{
+.status_not_selected:nth-of-type(1)::before, .status_selected:nth-of-type(1)::before{ /*top image*/
   display:block;
   width: 100vw;
   position: absolute;
@@ -429,7 +429,7 @@ tr:hover .td2, tr:hover .td1{
   pointer-events: none;
 }
 
-.status_not_selected:nth-of-type(1)::after, .status_selected:nth-of-type(1)::after{
+.status_not_selected:nth-of-type(1)::after, .status_selected:nth-of-type(1)::after{ /*second image*/
   display:block;
   width: 100vw;
   position: absolute;
@@ -448,7 +448,7 @@ tr:hover .td2, tr:hover .td1{
   pointer-events: none;
 }
 
-.status_not_selected:nth-of-type(2)::before, .status_selected:nth-of-type(2)::before{
+.status_not_selected:nth-of-type(2)::before, .status_selected:nth-of-type(2)::before{ /*third image*/
   display:block;
   width: 100vw;
   position: absolute;
@@ -467,7 +467,7 @@ tr:hover .td2, tr:hover .td1{
   pointer-events: none;
 }
 
-.status_not_selected:nth-of-type(2)::after, .status_selected:nth-of-type(2)::after{
+.status_not_selected:nth-of-type(2)::after, .status_selected:nth-of-type(2)::after{ /*fourth image*/
   display:block;
   width: 100vw;
   position: absolute;
@@ -488,7 +488,7 @@ tr:hover .td2, tr:hover .td1{
 
 
 
-.status_not_selected:nth-of-type(3)::before, .status_selected:nth-of-type(3)::before{
+.status_not_selected:nth-of-type(3)::before, .status_selected:nth-of-type(3)::before{ /*fifth image*/
   display:block;
   width: 100vw;
   position: absolute;
@@ -508,7 +508,7 @@ tr:hover .td2, tr:hover .td1{
   pointer-events: none;
 }
 
-#list_surround::after{ 
+#list_surround::after{ /* bottom image*/
   display:block;
   width: 100vw;
 /*position: -webkit-sticky;
