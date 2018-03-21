@@ -624,4 +624,5 @@ table.header_cw{					/*Push first list section down a bit from nave header*/
 
 #copyright::before{
   content: "Style design: github.com/acm321/AnimeListStyle \A";
+  white-space: pre;
 }
