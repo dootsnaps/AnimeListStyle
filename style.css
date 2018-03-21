@@ -622,6 +622,6 @@ table.header_cw{					/*Push first list section down a bit from nave header*/
   height:100%;
 }
 
-#copyright::before(
+#copyright::before{
   content: "List style by acm321: https://github.com/acm321/AnimeListStyle | "
-)
+}
