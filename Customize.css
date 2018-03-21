@@ -1,0 +1,28 @@
+/* Rudimentary CSS for customizing the background slides */
+/* Simply add your images to the rules below and use this css in your MAL css editor box */
+
+@import "https://acm321.github.io/AnimeListStyle/style.css";
+
+.status_not_selected:nth-of-type(1)::before, .status_selected:nth-of-type(1)::before{ /*top image*/
+  background-image:url()!important; /*put direct link to first image between the parenthesis/
+}
+
+.status_not_selected:nth-of-type(1)::after, .status_selected:nth-of-type(1)::after{ /*second image*/
+  background-image:url()!important; 
+}
+
+.status_not_selected:nth-of-type(2)::before, .status_selected:nth-of-type(2)::before{ /*third image*/
+  background-image:url()!important; 
+}
+
+.status_not_selected:nth-of-type(2)::after, .status_selected:nth-of-type(2)::after{ /*fourth image*/
+  background-image:url()!important; 
+}
+
+.status_not_selected:nth-of-type(3)::before, .status_selected:nth-of-type(3)::before{ /*fifth image*/
+  background-image:url()!important; 
+}
+
+#list_surround::after{ /* bottom image*/
+  background-image:url()!important; 
+}
