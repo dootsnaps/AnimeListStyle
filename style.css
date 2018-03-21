@@ -517,7 +517,7 @@ tr:hover .td2, tr:hover .td1{
   position: -o-sticky;*/
   position: relative;
   left: 0;
-  top:100px;
+  top:120px;
   content:"";
   background-image:url(http://i.imgur.com/tn2CCtb.jpg);/* Despera */
   background-repeat:no-repeat;
@@ -609,9 +609,9 @@ table.header_cw{					/*Push first list section down a bit from nave header*/
   transform-style: preserve-3d;
   z-index:-400!important;
   display: table-cell;
-  margin-bottom:10px;
+  margin-bottom:20px;
   overflow:hidden;
-  bottom:0;
+  bottom:0px;
 }
 
 #list_surround:last-child {
@@ -623,6 +623,6 @@ table.header_cw{					/*Push first list section down a bit from nave header*/
 }
 
 #copyright::before{
-  content: "--------------------------------------------\AList style design by acm3212002: github.com/acm321/AnimeListStyle\A--------------------------------------------\A";
+  content: "/---------------------------------------------------------------------------------------\\\A|  List style design by acm3212002: github.com/acm321/AnimeListStyle  |\A\\---------------------------------------------------------------------------------------/\A";
   white-space: pre;
 }
