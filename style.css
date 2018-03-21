@@ -623,6 +623,6 @@ table.header_cw{					/*Push first list section down a bit from nave header*/
 }
 
 #copyright::before{
-  content: "Style design: github.com/acm321/AnimeListStyle\A---------------------------\A";
+  content: "--------------------------------------------\AList style design by acm3212002: github.com/acm321/AnimeListStyle\A--------------------------------------------\A";
   white-space: pre;
 }
