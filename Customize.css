@@ -1,10 +1,53 @@
-/* Rudimentary CSS for customizing the background slides */
-/* Simply add your images to the rules below and use this css in your MAL css editor box */
+/* -------------------------------------------------------------------------------------
+  Rudimentary CSS for customizing the images in https://github.com/acm321/AnimeListStyle
+  Simply add your images to the rules below and use this css in your MAL css editor box.
+  Put a direct link to an image between the parenthesis in each "url()". 
+  This is untested! Please file any issues you have on the github repository.
+------------------------------------------------------------------------------------- */
 
 @import "https://acm321.github.io/AnimeListStyle/style.css";
 
+/*------- MAIN HEADER IMAGE (WELCOME BANNER) -------*/
+
+#list_surround::before{
+  background-image:url()!important; 
+  width: <x>px;!important; /*replace <x> with the width of your image*/
+  height: <y>px!important; /* replace <y> with the height of your image*/
+  left: calc(50% - <x/2>px)!important; /*replace <x/2> with half the width of your image. If you need the image to be centered differently, adjust this value until it lines up correctly.*/
+}
+
+/*-------------- TABLE HEADER IMAGES ---------------*/
+/* Use this template to create your own header images: https://github.com/acm321/AnimeListStyle/blob/master/headeroutline.xcf */
+/* For more advanced customization using your own template, you'll have to change the div size and text alignment.*/
+
+table.header_cw .header_title{ /*Currently Watching*/
+  background-image:url()!important; 
+}
+
+table.header_completed .header_title{ /*Completed*/
+  background-image:url()!important; 
+}
+
+table.header_onhold .header_title{ /*On-Hold*/
+  background-image:url()!important; 
+}
+
+table.header_dropped .header_title{ /*Dropped*/
+  background-image:url()!important; 
+}
+
+table.header_ptw .header_title{ /*Plan to Watch*/
+  background-image:url()!important; 
+}
+
+/*-------------- BACKGROUND SLIDES -----------------*/
+/* You can change the heights of these divs if you want to make the list longer or shorter*/
+/* Make sure that they still overlap after changing heights */
+/* The bottom image will always be at the bottom of the list. If the image(s) above are too tall, they may go past the bottom of the list! */
+/* Therefore, you should manually adjust the heights of the images below so that it fits your list length nicely and doesn't overflow */
+
 .status_not_selected:nth-of-type(1)::before, .status_selected:nth-of-type(1)::before{ /*top image*/
-  background-image:url()!important; /*put direct link to first image between the parenthesis/
+  background-image:url()!important; 
 }
 
 .status_not_selected:nth-of-type(1)::after, .status_selected:nth-of-type(1)::after{ /*second image*/
