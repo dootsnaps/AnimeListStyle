@@ -4,6 +4,8 @@
 /* See in action: https://myanimelist.net/animelist/acm3212002 */
 /*-------------------------------------------------------------------------*/
 
+/*-----------------------------TOP MENU BAR--------------------------------*/
+
 /* TOP MENU BAR BACKGROUND */
 #mal\_control\_strip{
   background-color:black;
@@ -33,6 +35,8 @@
   border-right: 0 none !important;
 }
   
+/*-------------------------------BODY AND LIST-SURROUND--------------------------------*/
+
 body {
   background:url(https://i.imgur.com/2QCpe3R.jpg); /*MAIN BACKGROUND IMAGE*/
   background-size: cover;
@@ -45,13 +49,14 @@ body {
   cursor:url(http://i.imgur.com/YxTfKol.png) 9 7, auto; /*green cursor*/
 }
 
+/* Cursor for hovered links*/
+a:hover, a:visited:hover {
+  cursor: url(http://i.imgur.com/ysmichE.png) 9 7, auto; /*red cursor*/
+}
+
 /* MAIN LIST CONTENT DIV */
 #list_surround {
- /* background-image: url(http://i.imgur.com/43Dtl0s.png);*/ /* BANNER IMAGE, PROBABLY/HOPEFULLY HIDDEN BY PSUEDO-ELEMENTS */
-  background-position: calc(50% - 475px) 0; /* Keep banner at center and put at top*/
-  background-repeat: no-repeat;
-  background-attachment: local;
-  padding-top: 240px; /*PUSH CONTENT DOWN UNDER  BANNER IMAGE*/
+  padding-top: 240px; /*PUSH CONTENT DOWN UNDER BANNER IMAGE*/
   width: 100%;
   transform-style: preserve-3d;
   perspective: 1px;
@@ -63,9 +68,7 @@ body {
   overflow-y:visible;
 }
 
-/* SECTION HEADERS */
-
-
+/*---------------------------------SECTION HEADERS---------------------------------*/
 
 table.header_cw .header_title{
   background:url(https://i.imgur.com/hzK4JqG.png); /*Dark bg, transparent*/
@@ -239,7 +242,6 @@ a:visited {
 a:hover, a:visited:hover {
   color:#f9f8d8;
   text-decoration:underline;
-  cursor: url(http://i.imgur.com/ysmichE.png) 9 7, auto; /*red cursor*/
 }
 
 /* BOTTOM OF EACH TABLE + GRAND TOTALS + COPYRIGHT */
