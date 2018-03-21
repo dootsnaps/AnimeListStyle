@@ -526,7 +526,7 @@ tr:hover .td1:nth-of-type(1)::before,tr:hover .td2:nth-of-type(1)::before, tr:ho
 /*---------------------- END CODE FOR MAKING HOVERED ELEMENTS MOVE OVER AND GET A PREFIX BLOCK THING -------------*/
 
 /*------------------------------------------------MISCELLANEOUS----------------------------------*/
-#copyright::after{  
+#copyright::after{  /*puts 10px space after #copyright*/
   display:block;
   width: 100vw;
   position: absolute;
