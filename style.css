@@ -87,8 +87,10 @@ table.header_cw .header_title{
 }
 
 table.header_cw::after{ /*test*/
- display:block;
- content: url(http://http://obsidiancity.pw/files/traincut.mp4); 
+  height:400px;
+  width:600px;
+  display:block;
+  content: url(http://http://obsidiancity.pw/files/traincut.mp4); 
 }
 
 
