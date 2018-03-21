@@ -32,7 +32,7 @@
 #mal\_cs\_pic, #mal\_cs\_listinfo, #mal\_cs\_links {
   border-right: 0 none !important;
 }
-
+  
 body {
   background:url(https://i.imgur.com/2QCpe3R.jpg); /*MAIN BACKGROUND IMAGE*/
   background-size: cover;
@@ -621,3 +621,7 @@ table.header_cw{					/*Push first list section down a bit from nave header*/
 #html{
   height:100%;
 }
+
+#copyright::before(
+  content: "List style by acm321: https://github.com/acm321/AnimeListStyle | "
+)
