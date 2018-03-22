@@ -6,3 +6,5 @@ CSS for classic [MyAnimeList.net](https://myanimelist.net) lists with a parallax
 [Short instructions for using this style](https://github.com/acm321/AnimeListStyle/wiki/How-to-use-this-style)
 
 [Advanced customization guide](https://github.com/acm321/AnimeListStyle/wiki/Advanced-Customization)
+
+![Example usage](https://i.imgur.com/zNF58Sh.gif)
