@@ -287,22 +287,22 @@ a:hover, a:visited:hover {
 tr:hover .td2, tr:hover .td1{
   background: none;
   background-image: url(http://i.imgur.com/QwO70om.png); /*Dark bg*/
-  -webkit-transition: .025s;
-  transition: .025s;
+  -webkit-transition: .1s;
+  transition: .1s;
 }
 
 /* ODD-NUMBERED TABLE ELEMENTS (AFTER SUBHEADERS) */
 .td1{
   background-image: url(http://i.imgur.com/ieNeYiW.png);
-  -webkit-transition: .025s;
-  transition: .025s;
+  -webkit-transition: .1s;
+  transition: .1s;
 }
 
 /* EVEN-NUMBERED TABLE ELEMENTS (AFTER SUBHEADERS) */
 .td2{
   background-image: url(http://i.imgur.com/sYw1RuD.png);
-  -webkit-transition: .025s;
-  transition: .025s;
+  -webkit-transition: .1s;
+  transition: .1;
 }
 
 /*-------------------------------------------------------------------"MORE" BUTTON REMOVAL------------------------------------------------*/
@@ -500,7 +500,7 @@ tr:hover .td1:nth-of-type(1)::before,tr:hover .td2:nth-of-type(1)::before, tr:ho
   left:0;
   top:0;
   width: 5px;
-  transition: .025s;
+  transition: .1s;
   background-color: #f9f8d8;
   z-index: 99999;
   margin-left: -5px;
@@ -514,7 +514,7 @@ tr:hover .td1:nth-of-type(1)::before,tr:hover .td2:nth-of-type(1)::before, tr:ho
   left:0;
   top:0;
   width: 0px;
-  transition: .025s;
+  transition: .1s;
   z-index: 99999;
   align:center;
   height:100%;
