@@ -2,6 +2,7 @@
 CSS for classic [MyAnimeList.net](https://myanimelist.net) lists with a parallax-scrolling background effect. 
 
 Example usage:
+
 ![example gif](g3i81Ne.gif?raw=true)
 
 [See it in action here](https://myanimelist.net/animelist/acm3212002)
