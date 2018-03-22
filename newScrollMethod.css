@@ -372,30 +372,30 @@ tr:hover .td2, tr:hover .td1{
   display:block!important;
   transform-style: preserve-3d;
   height:0!important;
-  z-index:-496 !important;
+  z-index:-500 !important;
 }
 
 #inlineContent::before{
   display:block;
   width: 100vw;
   position: absolute!important;
-  bottom: 20000px;
+  bottom: 14500px;
   left: 0;
   content:"";
-  background-image:url(https://i.imgur.com/6X7D4zr.png);/* Test image */
+  background-image:url(https://acm321.github.io/AnimeListStyle/bgtest.png);/* Test image */
   background-attachment: fixed;
   background-position:right top!important;
   background-size:cover;  
   transform: translateZ(-3px) scale(4);
   z-index:-500 !important;
   transform-style: preserve-3d;
-  height:1080px;
+  height:3828px;
   overflow:hidden;
   pointer-events: none;
 }
 
 /*OLD METHOD*/
-.status_not_selected:nth-of-type(1)::before, .status_selected:nth-of-type(1)::before{ /*top image*/
+//.status_not_selected:nth-of-type(1)::before, .status_selected:nth-of-type(1)::before{ /*top image*/
   display:block;
   width: 100vw;
   position: absolute;
@@ -433,7 +433,7 @@ tr:hover .td2, tr:hover .td1{
   pointer-events: none;
 }
 
-.status_not_selected:nth-of-type(2)::before, .status_selected:nth-of-type(2)::before{ /*third image*/
+//.status_not_selected:nth-of-type(2)::before, .status_selected:nth-of-type(2)::before{ /*third image*/
   display:block;
   width: 100vw;
   position: absolute;
