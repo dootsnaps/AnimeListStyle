@@ -367,11 +367,19 @@ tr:hover .td2, tr:hover .td1{
 }
 
 /*NEW TEST*/
-#inlineContent:last-of-type::before{
+#inlineContent{
+  position:relative!important;
+  display:block!important;
+  transform-style: preserve-3d;
+  height:0!important;
+  z-index:-496 !important;
+}
+
+#inlineContent::before{
   display:block;
   width: 100vw;
-  position: relative;
-  bottom: 0;
+  position: absolute!important;
+  bottom: 20000px;
   left: 0;
   content:"";
   background-image:url(https://i.imgur.com/6X7D4zr.png);/* Test image */
@@ -379,7 +387,7 @@ tr:hover .td2, tr:hover .td1{
   background-position:right top!important;
   background-size:cover;  
   transform: translateZ(-3px) scale(4);
-  z-index:-496 !important;
+  z-index:-500 !important;
   transform-style: preserve-3d;
   height:1080px;
   overflow:hidden;
