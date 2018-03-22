@@ -366,6 +366,27 @@ tr:hover .td2, tr:hover .td1{
   overflow:hidden;
 }
 
+/*NEW TEST*/
+td.category-totals:last-of-type::before{
+  display:block;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content:"";
+  background-image:url(https://i.imgur.com/6X7D4zr.png);/* Test image */
+  background-attachment: fixed;
+  background-position:right top!important;
+  background-size:cover;  
+  transform: translateZ(-3px) scale(4);
+  z-index:-496 !important;
+  transform-style: preserve-3d;
+  height:1080px;
+  overflow:hidden;
+  pointer-events: none;
+}
+
+/*OLD METHOD*/
 .status_not_selected:nth-of-type(1)::before, .status_selected:nth-of-type(1)::before{ /*top image*/
   display:block;
   width: 100vw;
