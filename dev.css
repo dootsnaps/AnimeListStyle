@@ -500,7 +500,7 @@ tr:hover .td1:nth-of-type(1)::before,tr:hover .td2:nth-of-type(1)::before, tr:ho
   left:0;
   top:0;
   width: 5px;
-  transition: .1s;
+  transition: .025s;
   background-color: #f9f8d8;
   z-index: 99999;
   margin-left: -5px;
@@ -514,7 +514,7 @@ tr:hover .td1:nth-of-type(1)::before,tr:hover .td2:nth-of-type(1)::before, tr:ho
   left:0;
   top:0;
   width: 0px;
-  transition: .1s;
+  transition: .3s;
   z-index: 99999;
   align:center;
   height:100%;
