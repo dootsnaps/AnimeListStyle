@@ -379,7 +379,7 @@ tr:hover .td2, tr:hover .td1{
   display:block;
   width: 100vw;
   position: absolute!important;
-  bottom: 14500px;
+  bottom: 14700px;
   left: 0;
   content:"";
   background-image:url(https://acm321.github.io/AnimeListStyle/bgtest.png);/* Test image */
@@ -389,7 +389,26 @@ tr:hover .td2, tr:hover .td1{
   transform: translateZ(-3px) scale(4);
   z-index:-500 !important;
   transform-style: preserve-3d;
-  height:3828px;
+  height:calc(100vw * 3.09931840312);
+  overflow:hidden;
+  pointer-events: none;
+}
+
+#inlineContent::after{
+  display:block;
+  width: 100vw;
+  position: absolute!important;
+  bottom: 10000px;
+  left: 0;
+  content:"";
+  background-image:url(https://acm321.github.io/AnimeListStyle/bgtest2.png);/* Test image */
+  background-attachment: fixed;
+  background-position:right top!important;
+  background-size:cover;  
+  transform: translateZ(-2px) scale(3);
+  z-index:-499 !important;
+  transform-style: preserve-3d;
+  height:calc(100vw * 2.249355116);
   overflow:hidden;
   pointer-events: none;
 }
@@ -414,7 +433,7 @@ tr:hover .td2, tr:hover .td1{
   pointer-events: none;
 }
 
-.status_not_selected:nth-of-type(1)::after, .status_selected:nth-of-type(1)::after{ /*second image*/
+//.status_not_selected:nth-of-type(1)::after, .status_selected:nth-of-type(1)::after{ /*second image*/
   display:block;
   width: 100vw;
   position: absolute;
@@ -452,17 +471,17 @@ tr:hover .td2, tr:hover .td1{
   pointer-events: none;
 }
 
-.status_not_selected:nth-of-type(2)::after, .status_selected:nth-of-type(2)::after{ /*fourth image*/
+//.status_not_selected:nth-of-type(2)::after, .status_selected:nth-of-type(2)::after{ /*fourth image*/
   display:block;
   width: 100vw;
   position: absolute;
-  top: 10000px;
+  top: 11000px;
   left: 0;
   content:"";
   background-image:url(https://i.imgur.com/rQq5zoB.jpg);/* Ran */
   background-repeat:no-repeat;
   background-size:cover;
-  transform: translateZ(-1px) scale(2);
+  transform: translateZ(-2px) scale(3);
   z-index:-498 !important;
   transform-style: preserve-3d;
   height:2160px;
@@ -471,9 +490,7 @@ tr:hover .td2, tr:hover .td1{
   pointer-events: none;
 }
 
-
-
-.status_not_selected:nth-of-type(3)::before, .status_selected:nth-of-type(3)::before{ /*fifth image*/
+//.status_not_selected:nth-of-type(3)::before, .status_selected:nth-of-type(3)::before{ /*fifth image*/
   display:block;
   width: 100vw;
   position: absolute;
