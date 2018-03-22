@@ -370,7 +370,7 @@ tr:hover .td2, tr:hover .td1{
 td.category-totals:last-of-type::before{
   display:block;
   width: 100vw;
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   content:"";
