@@ -1,0 +1,585 @@
+/*----------------------------------------------------------------------------
+ MAL LIST STYLE DESIGN BY ACM321
+ https://github.com/acm321/AnimeListStyle 
+ See it in action: https://myanimelist.net/animelist/acm3212002 
+----------------------------------------------------------------------------*/
+
+/*-----------------------------TOP MENU BAR--------------------------------*/
+
+/* TOP MENU BAR BACKGROUND */
+#mal\_control\_strip{
+  background-color:black;
+  background-image:none!important;
+  color:#f9f8d8!important;
+}
+
+/* TOP MENU BAR LINKS */
+#mal\_control\_strip a{
+  color: #f9f8d8!important;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: underline;
+  background: transparent;
+  text-transform: none;
+}
+
+/* TOP MENU BAR "OTHER LINKS" */
+#mal\_cs\_otherlinks{
+  color: #f9f8d8!important;
+}
+
+/* REMOVE LINES FROM MENU BAR */
+#mal\_cs\_pic, #mal\_cs\_listinfo, #mal\_cs\_links {
+  border-right: 0 none !important;
+}
+  
+/*-------------------------------BODY AND LIST-SURROUND--------------------------------*/
+
+body {
+  background:url(https://i.imgur.com/2QCpe3R.jpg); /*MAIN BACKGROUND IMAGE*/
+  background-size: cover;
+  background-position: right bottom;
+  background-color: black;
+  font-weight: light;
+  /*---------DON'T TOUCH---------*/
+  overflow:hidden; /*scroll when list is longer than vh*/
+  height:100vh;/*page height is vh*/
+  transform-style: preserve-3d;/*enable 3d transforms for parallax effect*/
+}
+
+/* Default cursor */
+body{cursor:url(http://i.imgur.com/YxTfKol.png) 9 7, auto; /*green cursor*/}
+
+/* Cursor for hovered links */
+a:hover, a:visited:hover {cursor: url(http://i.imgur.com/ysmichE.png) 9 7, auto; /*red cursor*/}
+
+/* MAIN LIST CONTENT DIV */
+#list_surround {
+  padding-top: 240px; /*PUSH CONTENT DOWN UNDER BANNER IMAGE*/
+  width: 100%;
+  transform-style: preserve-3d;
+  perspective: 1px;
+  overflow-x: hidden;
+  height:calc(100vh - 280px); /*HEIGHT = vh - (BANNER IMAGE HEIGHT + MAL CONTROL STRIP HEIGHT)*/
+  display:block;
+  position:relative;
+  vertical-align: top;
+  overflow-y:visible;
+}
+
+/*---------------------------------SECTION HEADERS---------------------------------*/
+
+table.header_cw .header_title{
+  background:url(https://i.imgur.com/hzK4JqG.png); /*Currently Watching*/
+}
+
+table.header_completed .header_title{
+  background:url(https://i.imgur.com/5080Ps3.png); /*Completed*/
+}
+
+table.header_onhold .header_title{
+  background:url(https://i.imgur.com/tdQfRPL.png); /*On-Hold*/
+}
+
+table.header_dropped .header_title{
+  background:url(https://i.imgur.com/sDXHQ6Z.png); /*Dropped*/
+}
+
+table.header_ptw .header_title{
+  background:url(https://i.imgur.com/zlXMEjF.png); /*Plan to Watch*/
+}
+
+.header_title{
+  background-repeat:none;
+  color:#f9f8d8;
+  font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
+  font-size:30px;
+  height:191px;
+  padding-top:0px;
+  margin-top:-20px;
+  padding-bottom:6px;
+  margin-bottom: -5px;		/*space between headers and sub-headers*/
+  width:237px!important;
+  text-align:center;
+  transform:translateX(-12px);
+}
+
+.header_title span{
+  position: relative;
+  bottom:-139px;
+  left:-20px;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+/* For no header images use something like this instead! */
+/*
+.header_title {
+  background:url(http://i.imgur.com/QwO70om.png); 
+  color:#f9f8d8;
+  font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
+  font-size:30px;
+  height:35px;
+  padding-top:0px;
+  padding-bottom:6px;
+  border-radius:5px;
+  box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.41);
+  margin-bottom: 5px;		
+  width:180px!important;
+  text-align:center;
+}
+*/
+
+/*------------------------------TABLE STYLES--------------------------------*/
+
+/* SUB-HEADERS (TOP OF EACH TABLE) */
+.table_header {
+  background:url(http://i.imgur.com/QwO70om.png); /*Dark bg*/
+  font-weight:bold;
+  padding:2px;
+  color:white;
+  height:32px;
+}
+
+/* Tags Row */
+.td1:nth-of-type(6), .td2:nth-of-type(6){ 
+  width: 200px;
+  max-width:200px;
+  padding:5px ;
+}
+
+/* Tags Header */ 
+.table_header:nth-of-type(6) { 
+  width: 200px;/*keep same width as tags row*/
+  text-align: center; 
+  padding:5px;
+}
+
+/* MAKE MAIN TABLES HAVE ROUNDED CORNERS ON TOP*/
+.table_header:nth-of-type(7) {		/* RATING COLUMN */
+  border-top-right-radius:5px;
+}
+.table_header:nth-of-type(1) {		/* #'s COLUMN */
+  border-top-left-radius:5px;
+}
+
+/* ANIME TITLE FONTS */
+.animetitle, .animetitle:visited {	
+  color:#f9f8d8;
+  font-family:Lucida Grande;
+  font-size:17px;
+  text-align:left;
+  height:30px;
+}
+
+/* LIST FONTS */
+.td1, .td2, a, a:visited, .category_totals, .table_header, #grand_totals, #copyright {
+  color:#f9f8d8;
+  font-family:Lucida Grande;
+}
+
+/* UNHOVERED LINKS */
+a {
+  text-decoration:none;
+  color:#f9f8d8;
+}
+
+/* VISITED UNHOVERED LINKS */
+a:visited {
+  text-decoration:none;
+}
+
+/* ALL HOVERED LINKS */
+a:hover, a:visited:hover {
+  color:#f9f8d8;
+  text-decoration:underline;
+}
+
+/* BOTTOM OF EACH TABLE + GRAND TOTALS + COPYRIGHT */
+.category_totals,
+#grand_totals,
+#copyright {
+  padding:2px;
+  background-image: url(http://i.imgur.com/ieNeYiW.png); /*Light bg*/
+}
+
+/* HOVERED: BOTTOM OF EACH TABLE + GRAND TOTALS + COPYRIGHT */
+.category_totals:HOVER,
+#grand_totals:HOVER,
+#copyright:HOVER {
+  background:url(http://i.imgur.com/QwO70om.png);/*Dark bg*/
+  padding:2px;
+  color:#f9f8d8;
+}
+
+.status_selected {
+  background-color:black;
+  padding:2px;
+  color:white;
+  text-decoration: blink;
+}
+.status_not_selected {
+  background-color:black;
+  padding:2px;
+  color:white;
+}
+.status_selected a{
+  color:#f9f8d8;
+  font-weight: bold;
+}
+.status_not_selected a{
+  color:#f9f8d8;
+}
+.thickbox {
+  color:cyan;
+  font-family:fantasy;
+  font-size:12px;
+}
+.category_totals {
+  height:30px;
+}
+#copyright, #grand_totals {
+  text-align: center;
+  margin:0 auto;
+}
+
+/* FINDS FIRST STATUS SELECTOR BUTTON NO MATTER WHICH STATUS IS SELECTED*/
+#list_surround .status_selected, #list_surround .status_not_selected {
+  border-radius:0px 0px 0px 5px;/*BOTTOM-LEFT ROUNDED BORDER*/
+}
+
+/* ALL STATUS BUTTONS WHICH ARE NOT THE LEFT- OR RIGHT-MOST BUTTONS */
+#list_surround .status_selected + .status_not_selected, #list_surround .status_not_selected + .status_selected, #list_surround .status_not_selected + .status_not_selected {
+  border-radius: 0px !important; /*NO BORDER*/
+}
+
+/* FINDS LAST STATUS SELECTOR BUTTON NO MATTER WHICH STATUS IS SELECTED*/
+#list_surround .status_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected, #list_surround .status_not_selected + .status_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected, #list_surround .status_not_selected + .status_not_selected + .status_selected + .status_not_selected + .status_not_selected + .status_not_selected, #list_surround .status_not_selected + .status_not_selected + .status_not_selected + .status_selected + .status_not_selected + .status_not_selected, #list_surround .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_selected + .status_not_selected, #list_surround .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_selected, #list_surround .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected + .status_not_selected {
+  border-radius:0 0 5px 0px !important;/*BOTTOM-RIGHT ROUNDED BORDER*/
+}
+
+/* SELECTED STATUS BUTTON */
+.status_selected{
+  height:32px;
+  background:none;
+  background-image: url(http://i.imgur.com/QwO70om.png);
+}
+
+/* UNSELECTED STATUS BUTTONS */
+.status_not_selected{
+  height:32px;
+  background:none;
+  background-image: url(http://i.imgur.com/ieNeYiW.png);
+}
+
+/* HOVERED UNSELECTED STATUS BUTTONS */
+.status_not_selected:hover {
+  background:none;
+  background-image: url(http://i.imgur.com/QwO70om.png);
+}
+
+/* HOVERED TABLE ROWS WITH td1 OR td2 CLASSES */
+tr:hover .td2, tr:hover .td1{
+  background: none;
+  background-image: url(http://i.imgur.com/QwO70om.png); /*Dark bg*/
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+/* ODD-NUMBERED TABLE ELEMENTS (AFTER SUBHEADERS) */
+.td1{
+  background-image: url(http://i.imgur.com/ieNeYiW.png);
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+/* EVEN-NUMBERED TABLE ELEMENTS (AFTER SUBHEADERS) */
+.td2{
+  background-image: url(http://i.imgur.com/sYw1RuD.png);
+  -webkit-transition: .1s;
+  transition: .1;
+}
+
+/*-------------------------------------------------------------------"MORE" BUTTON REMOVAL------------------------------------------------*/
+#list_surround tab\le:nth-of-type(n+4):hover td:nth-of-type(3),
+#list_surround tab\le:nth-of-type(n+4):hover td:nth-of-type(4), 
+#list_surround tab\le:nth-of-type(n+4):hover td:nth-of-type(5), 
+#list_surround tab\le:nth-of-type(n+4):hover td:nth-of-type(6), 
+#list_surround tab\le:nth-of-type(n+4):hover td:nth-of-type(7),
+#list_surround tab\le:nth-of-type(n+4):hover td:nth-of-type(8) {
+  display: tab\le-cell;
+}
+
+#list_surround small a:last-of-type {
+  display: none !important;
+}
+
+.animetitle + small {
+  visibility: visible !important;
+}
+
+#list_surround a[href*="http://myanimelist.net/panel.php?go=edit"],
+#list_surround a[href*="http://myanimelist.net/editlist.php?type="], 
+#list_surround a[href*="http://myanimelist.net/panel.php?go=add"] {
+  visibility: visible !important;
+  margin-right: 10px
+}
+
+.td1:nth-of-type(6) small, .td2:nth-of-type(6) small,
+.td1:nth-of-type(5) small, .td2:nth-of-type(5) small,
+.td1:nth-of-type(4) small, .td2:nth-of-type(4) small {
+  visibility: visible !important;
+}
+
+.td1:nth-of-type(6) small:hover, .td2:nth-of-type(6) small:hover,
+.td1:nth-of-type(5) small:hover, .td2:nth-of-type(5) small:hover,
+.td1:nth-of-type(4) small:hover, .td2:nth-of-type(4) small:hover{
+  text-decoration: underline;
+}
+/*-------------------------------------------------------------------END OF "MORE" BUTTON REMOVAL------------------------------------------*/
+
+/*-------------------------------------------------------------------STATIC SLIDES (MOVE WITH LIST)----------------------------------------------------------*/
+#list_surround::before{  /* BANNER IMAGE OVERLAY - NEEDED FOR BANNER TO BE VISIBLE */
+  display: block;
+  width: 1560px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  bottom: 0;
+  left: calc(50% - 747px);
+  float:left;
+  content:"";
+  background-image:url(https://i.imgur.com/oSxMuq8.png);
+  background-repeat: no-repeat;
+  z-index:999 !important;
+  height:250px;
+}
+
+/*------------------------------------------------------------------BACKGROUND SLIDES (MOVE WITH PERSPECTIVE)-------------------------------------------------------*/
+
+.status_not_selected, .status_selected{
+  overflow:hidden;
+}
+
+.status_not_selected:nth-of-type(1)::before, .status_selected:nth-of-type(1)::before{ /*top image*/
+  display:block;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content:"";
+  background-image:url(https://i.imgur.com/SznxLER.jpg);/* Reki */
+  background-attachment: fixed;
+  background-position:right top!important;
+  background-size:cover;  
+  transform: translateZ(-3px) scale(4);
+  z-index:-500 !important;
+  transform-style: preserve-3d;
+  height:1080px;
+  overflow:hidden;
+  pointer-events: none;
+}
+
+.status_not_selected:nth-of-type(1)::after, .status_selected:nth-of-type(1)::after{ /*second image*/
+  display:block;
+  width: 100vw;
+  position: absolute;
+  top: 3240px;
+  left: 0;
+  content:"";
+  background-image:url(http://i.imgur.com/vm6qOMh.jpg);/* Rakka */
+  background-repeat:no-repeat;
+  background-size:cover;
+  transform: translateZ(-2px) scale(3);
+  z-index:-499 !important;
+  transform-style: preserve-3d;
+  height:1080px;
+  overflow:hidden;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  pointer-events: none;
+}
+
+.status_not_selected:nth-of-type(2)::before, .status_selected:nth-of-type(2)::before{ /*third image*/
+  display:block;
+  width: 100vw;
+  position: absolute;
+  top: 8160px;
+  left: 0;
+  content:"";
+  background-image:url(https://i.imgur.com/44stJQB.jpg);/* Lain */
+  background-repeat:no-repeat;
+  background-size:100%;
+  background-position:top;
+  transform: translateZ(-3px) scale(4);
+  z-index:-500 !important;
+  transform-style: preserve-3d;
+  height:2160px;
+  overflow:hidden;
+  pointer-events: none;
+}
+
+.status_not_selected:nth-of-type(2)::after, .status_selected:nth-of-type(2)::after{ /*fourth image*/
+  display:block;
+  width: 100vw;
+  position: absolute;
+  top: 10000px;
+  left: 0;
+  content:"";
+  background-image:url(https://i.imgur.com/rQq5zoB.jpg);/* Ran */
+  background-repeat:no-repeat;
+  background-size:cover;
+  transform: translateZ(-1px) scale(2);
+  z-index:-498 !important;
+  transform-style: preserve-3d;
+  height:2160px;
+  overflow:hidden;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  pointer-events: none;
+}
+
+
+
+.status_not_selected:nth-of-type(3)::before, .status_selected:nth-of-type(3)::before{ /*fifth image*/
+  display:block;
+  width: 100vw;
+  position: absolute;
+  top:14000px;
+  left: 0;
+  content:"";
+  background-image:url(http://i.imgur.com/g6RYLPQ.jpg);/* Rei */
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:top;
+  transform: translateZ(-3px) scale(4);
+  z-index:-499 !important;
+  transform-style: preserve-3d;
+  min-height:2160px;
+  margin-bottom: 0;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  pointer-events: none;
+}
+
+#list_surround::after{ /* bottom image*/
+  display:block;
+  width: 100vw;
+/*position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;*/
+  position: relative;
+  left: 0;
+  top:120px;
+  content:"";
+  background-image:url(http://i.imgur.com/tn2CCtb.jpg);/* Despera */
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:top;
+  z-index:-497 !important;
+  height:200vh;
+  transform: translateZ(-.5px) translateY(-225vh) scale(1.5);
+/*transform: translateY(-200vh);*/
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  overflow:none;
+}
+
+/*-----------------------------------------------------------------------END BACKGROUND SLIDES-------------------------------------------------------*/
+
+/*-------------------------- CODE FOR MAKING HOVERED ELEMENTS MOVE OVER AND GET A PREFIX BLOCK THING -------------*/
+#list_surround > :not(.header_cw):not(.header_completed):not(.header_onhold):not(.header_dropped):not(.header_ptw) + table:hover:not(:first-of-type):not(.header_cw):not(.header_completed):not(.header_onhold):not(.header_dropped):not(.header_ptw){
+  padding-left:5px !important;
+}
+
+tr:hover .td1:nth-of-type(1)::before,tr:hover .td2:nth-of-type(1)::before, tr:hover .category_totals::before{
+  content: "";
+  position:absolute;
+  left:0;
+  top:0;
+  width: 5px;
+  transition: .1s;
+  background-color: #f9f8d8;
+  z-index: 99999;
+  margin-left: -5px;
+  align:center;
+  height:100%;
+}
+
+.td1:nth-of-type(1)::before,.td2:nth-of-type(1)::before, .category_totals::before{
+  content: "";
+  position:absolute;
+  left:0;
+  top:0;
+  width: 0px;
+  transition: .1s;
+  z-index: 99999;
+  align:center;
+  height:100%;
+}
+
+.td1:nth-of-type(1),.td2:nth-of-type(1),.category_totals{
+  position:relative;
+}
+/*---------------------- END CODE FOR MAKING HOVERED ELEMENTS MOVE OVER AND GET A PREFIX BLOCK THING -------------*/
+
+/*------------------------------------------------MISCELLANEOUS----------------------------------*/
+#copyright::after{  /*puts 10px space after #copyright*/
+  display:block;
+  width: 100vw;
+  position: absolute;
+  bottom:0;
+  left: -20px;
+  content:"";
+  margin-bottom:-10px; 
+  height:10px;
+}
+
+/* ALL TABLES WITHIN LIST SURROUND + GRAND TOTALS + COPYRIGHT */
+#list_surround > table, #grand_totals, #copyright{
+  width:950px;
+  margin-left:calc(50% - 475px);
+  transition: .1s;
+  -webkit-transition: .1s;
+}
+
+#list_surround > table, #grand_totals{ /* Put table elements in front*/
+  z-index:999!important;
+}
+
+#list_surround > table:nth-of-type(1), table.header_cw, table.header_completed, table.header_onhold, table.header_dropped, table.header_ptw, #grand_totals, #copyright{	/*keep all tables to the left*/
+  float:left;	
+}
+
+#grand_totals, #copyright{			/*Rounded borders on totals and copyright sections*/
+  border-radius: 5px;
+}
+
+table.header_cw{					/*Push first list section down a bit from nave header*/
+  margin-top:10px;
+}
+
+#copyright{							/*Keep 10px space at bottom of page, also needed if this section is used for a background slide*/
+  position:relative;
+  transform-style: preserve-3d;
+  z-index:-400!important;
+  display: table-cell;
+  margin-bottom:20px;
+  overflow:hidden;
+  bottom:0px;
+}
+
+#list_surround:last-child {
+  margin-bottom: 0;
+  bottom:0;
+}
+#html{
+  height:100%;
+}
+
+#copyright::before{
+  content: "/---------------------------------------------------------------------------------------\\\A|  List style design by acm3212002: github.com/acm321/AnimeListStyle  |\A\\---------------------------------------------------------------------------------------/\A";
+  white-space: pre;
+}
