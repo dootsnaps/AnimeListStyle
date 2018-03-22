@@ -382,7 +382,8 @@ tr:hover .td2, tr:hover .td1{
   bottom: 7800px;
   left: 0;
   content:"";
-  background-image:url(https://acm321.github.io/AnimeListStyle/bgtest.png);/* Test image */
+  //background-image:url(https://acm321.github.io/AnimeListStyle/bgtest.png);/* Test image */
+  background-image:url(https://files.catbox.moe/u8r5kq.png);
   background-attachment: fixed;
   background-position:right top!important;
   background-size:cover;  
@@ -401,7 +402,8 @@ tr:hover .td2, tr:hover .td1{
   bottom: 10000px;
   left: 0;
   content:"";
-  background-image:url(https://acm321.github.io/AnimeListStyle/bgtest2.png);/* Test image */
+  //background-image:url(https://acm321.github.io/AnimeListStyle/bgtest2.png);/* Test image */
+  background-image:url(https://files.catbox.moe/tj1abg.png);
   background-attachment: fixed;
   background-position:right top!important;
   background-size:cover;  
