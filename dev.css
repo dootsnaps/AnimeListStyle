@@ -287,22 +287,22 @@ a:hover, a:visited:hover {
 tr:hover .td2, tr:hover .td1{
   background: none;
   background-image: url(http://i.imgur.com/QwO70om.png); /*Dark bg*/
-  -webkit-transition: .1s;
-  transition: .1s;
+  -webkit-transition: .025s;
+  transition: .025s;
 }
 
 /* ODD-NUMBERED TABLE ELEMENTS (AFTER SUBHEADERS) */
 .td1{
   background-image: url(http://i.imgur.com/ieNeYiW.png);
-  -webkit-transition: .1s;
-  transition: .1s;
+  -webkit-transition: .025s;
+  transition: .025s;
 }
 
 /* EVEN-NUMBERED TABLE ELEMENTS (AFTER SUBHEADERS) */
 .td2{
   background-image: url(http://i.imgur.com/sYw1RuD.png);
-  -webkit-transition: .1s;
-  transition: .1s;
+  -webkit-transition: .025s;
+  transition: .025s;
 }
 
 /*-------------------------------------------------------------------"MORE" BUTTON REMOVAL------------------------------------------------*/
