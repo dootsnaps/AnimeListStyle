@@ -367,7 +367,7 @@ tr:hover .td2, tr:hover .td1{
 }
 
 /*NEW TEST*/
-td.category-totals:last-of-type::before{
+#inline-content:last-of-type::before{
   display:block;
   width: 100vw;
   position: relative;
