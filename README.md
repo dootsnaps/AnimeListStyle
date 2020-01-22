@@ -5,7 +5,7 @@ Example usage:
 
 ![example gif](g3i81Ne.gif?raw=true)
 
-[See it in action here](https://myanimelist.net/animelist/acm3212002)
+[See it in action here](https://myanimelist.net/animelist/dootsnaps)
 
 [Short instructions for using this style](https://github.com/acm321/AnimeListStyle/wiki/How-to-use-this-style)
 
