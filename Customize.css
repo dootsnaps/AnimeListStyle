@@ -1,11 +1,11 @@
 /* -------------------------------------------------------------------------------------
-  Rudimentary CSS for customizing the images in https://github.com/acm321/AnimeListStyle
+  Rudimentary CSS for customizing the images in https://github.com/dootsnaps/AnimeListStyle
   Simply add your images to the rules below and use this css in your MAL css editor box.
   Put a direct link to an image between the parenthesis in each "url()". 
   This is untested! Please file any issues you have on the github repository.
 ------------------------------------------------------------------------------------- */
 
-@import "https://acm321.github.io/AnimeListStyle/style.css";
+@import "https://dootsnaps.github.io/AnimeListStyle/style.css";
 
 /*------- MAIN HEADER IMAGE (WELCOME BANNER) -------*/
 
@@ -17,7 +17,7 @@
 }
 
 /*-------------- TABLE HEADER IMAGES ---------------*/
-/* Use this template to create your own header images: https://github.com/acm321/AnimeListStyle/blob/master/headeroutline.xcf */
+/* Use this template to create your own header images: https://github.com/dootsnaps/AnimeListStyle/blob/master/headeroutline.xcf */
 /* For more advanced customization using your own template, you'll have to change the div size and text alignment.*/
 
 table.header_cw .header_title{ /*Currently Watching*/
