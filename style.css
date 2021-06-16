@@ -580,6 +580,6 @@ table.header_cw{					/*Push first list section down a bit from nave header*/
 }
 
 #copyright::before{
-  content: "/---------------------------------------------------------------------------------------\\\A|  List style design by acm3212002: github.com/acm321/AnimeListStyle  |\A\\---------------------------------------------------------------------------------------/\A";
+  content: "/---------------------------------------------------------------------------------------\\\A|  List style design by DootSnaps: github.com/dootsnaps/AnimeListStyle  |\A\\---------------------------------------------------------------------------------------/\A";
   white-space: pre;
 }
