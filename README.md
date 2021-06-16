@@ -1,4 +1,7 @@
 # AnimeListStyle
+
+*Currently Very Broken*
+
 CSS for classic [MyAnimeList.net](https://myanimelist.net) lists with a parallax-scrolling background effect. 
 
 Currently broken (scrolling down to a certain point causes list to get hidden behind one of the background slides)
