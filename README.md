@@ -10,6 +10,6 @@ Example usage:
 
 [See it in action here](https://myanimelist.net/animelist/dootsnaps)
 
-[Short instructions for using this style](https://github.com/acm321/AnimeListStyle/wiki/How-to-use-this-style)
+[Short instructions for using this style](https://github.com/dootsnaps/AnimeListStyle/wiki/How-to-use-this-style)
 
-[Advanced customization guide](https://github.com/acm321/AnimeListStyle/wiki/Advanced-Customization)
+[Advanced customization guide](https://github.com/dootsnaps/AnimeListStyle/wiki/Advanced-Customization)
