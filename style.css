@@ -374,10 +374,14 @@ tr:hover .td2, tr:hover .td1{
   left: 0;
   content:"";
   background-image:url(https://i.imgur.com/SznxLER.jpg);/* Reki */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position:right top!important;
   background-size:cover;  
-  transform: translateZ(-3px) scale(4);
+ /* transform: translateZ(-3px) scale(4); */
+  
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: translateZ(-3px) scale(4);
+  
   z-index:-500 !important;
   transform-style: preserve-3d;
   height:1080px;
@@ -458,6 +462,10 @@ tr:hover .td2, tr:hover .td1{
   transform: translateZ(-3px) scale(4);
   z-index:-499 !important;
   transform-style: preserve-3d;
+  
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: translateZ(-3px) scale(4);
+  
   min-height:2160px;
   margin-bottom: 0;
   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
