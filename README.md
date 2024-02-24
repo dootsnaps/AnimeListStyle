@@ -1,12 +1,12 @@
 # AnimeListStyle
 
-*CURRENTLY BROKEN as of November 1 2021 see pinned issue*
+*UPDATE FEB 24 2024: Style only uses one scrolling background image now instead of several. I have been unable to resolve the pinned issue and as such i might as well at least make a style that vaguely works instead of one that is totally broken.*
 
 CSS for classic [MyAnimeList.net](https://myanimelist.net) lists with a parallax-scrolling background effect. 
 
 Example usage:
 
-![example gif](g3i81Ne.gif?raw=true)
+![example gif](example-new.gif?raw=true)
 
 [See it in action here](https://myanimelist.net/animelist/dootsnaps)
 
