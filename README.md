@@ -6,7 +6,7 @@ CSS for classic [MyAnimeList.net](https://myanimelist.net) lists with a parallax
 
 Example usage:
 
-![example gif](example-new.gif?raw=true)
+![example gif](https://i.imgur.com/KVnAyN2.gif)
 
 [See it in action here](https://myanimelist.net/animelist/dootsnaps)
 
